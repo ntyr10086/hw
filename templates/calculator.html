@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>數學運算</title>
+</head>
+<body>
+    <h2>數學運算</h2>
+    <form method="post">
+        <input type="number" name="x" step="any" placeholder="請輸入x" required>
+        <select name="opt">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" name="y" step="any" placeholder="請輸入y" required>
+        <button type="submit">計算</button>
+    </form>
+
+    {% if result is not none %}
+        <h3>結果是：{{ result }}</h3>
+    {% endif %}
+
+    <br>
+    <a href="/">回到網站首頁</a>
+</body>
+</html>
